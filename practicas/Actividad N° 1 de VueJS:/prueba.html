@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title>App Moneda - Vuejs</title>
+        <script src="https://unpkg.com/vue@next"></script>
+    
+
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">APP MONEDA</a>
+            </div>
+        </nav>
+
+        <!--app-->
+
+
+        <div class="container"  style="margin-top: 20px;">
+
+           <div class="card border-danger">
+
+                <div class="card-body">
+               
+                    <div id="dolares">
+                
+                        <div class="mb-3">
+    
+                            <button v-on:click="mostrar" type="button" class="btn btn-outline-success">Valor de las Monedas</button>
+    
+                        </div>
+                        
+                        <div class="mb-3 mt-3">
+    
+                            <ul class="list-group">
+            
+                                <li v-for="valor of lista_valores" class="list-group-item"> {{valor.casa.nombre}}</li>
+                                <li v-for="valor of lista_valores" class="list-group-item"> {{valor.casa.venta}} </li>
+                                <li v-for="valor of lista_valores" class="list-group-item"> {{valor.casa.compra}}</li>
+                            </ul>
+            
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+    
+    
+    
+               
+               
+               
+                </div>
+            </div>
+
+                        
+
+
+
+        </div>
+        <script>
+
+            const bolsa = {
+
+                data()  {
+
+                    return { 
+                    lista_valores:[]
+                
+                    }
+                },
+
+                methods: {
+
+                    async  mostrar(){
+
+                        const resultado = await fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales");
+
+                        this.lista_valores = await resultado.json();
+
+                        
+                    }
+
+                    
+                },
+                
+                mounted(){
+
+                    this.mostrar();
+
+                }
+
+            }
+
+
+
+            Vue.createApp(bolsa).mount("#dolares");
+
+        </script>
+
+    </body>
+</html>
+
+
+<Table class="table table-hover">
+                        
+    <thead>
+        <tr>
+            <th scope="col">Moneda</th>
+            <th scope="col">Compra</th>
+            <th scope="col">Venta</th>
+            
+        </tr>
+    </thead>
+    <tbody id="dolares">
+    
+        <tr  v-for="valor in lista_valores">
+
+            <td >{{valor.casa.nombre}}</td>
+
+            <td  class="badge rounded-pill bg-warning text-dark"> {{valor.casa.venta}}</td>
+            
+            <td  class="badge rounded-pill bg-primary">{{valor.casa.compra}}</td>
+            
+        
+        </tr>
+
+
+    </tbody>
+
+</Table>
+
+<div class="mb-3 mt-3">
+
+    <ul class="list-group">
+
+        <li v-for="valor of lista_valores" class="list-group-item">{{valor.casa.nombre}}</li>
+        <li v-for="valor of lista_valores" class="list-group-item"> {{valor.casa.venta}}</li>
+        <li v-for="valor of lista_valores" class="list-group-item">{{valor.casa.compra}}</li>
+    </ul>
+
+</div>

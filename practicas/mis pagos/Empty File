@@ -1,0 +1,9 @@
+ACTIVIDAD N°4 - VUE
+Consigna
+Deberán aplicar lo visto hasta  el momento. La actividad consiste en diseñar y obtener la misma apariencia que se indica en la imagen haciendo uso de Bootstrap 5.
+
+En el formulario que se muestra en la IMAGEN, haciendo uso VUE se deberá recoger los datos y guardar los mismos en un ITEM del LOCALSTORAGE. Posteriormente tendrán que recorrer los pagos almacenados para mostrarlos en una GRILLA(tabla) que se encuentra junto al formulario de carga de PAGOS.
+
+La idea es hacer una revisión el LUNES 28 de JUNIO y las consultas correspondientes.
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Ley de OMH</title>
+    </head>
+    <body background="electricc.jpg">
+        <!--NAV-->
+        <nav>
+            <div class="nav-wrapper red darken-1 ">
+              <a href="#" class="brand-logo center">Cálculadora LEY DE OMH</a>
+              
+            </div>
+        </nav>
+        <!--inicio columnas-->
+        
+        <div class="row">
+            <div class="col s12 m6 l6 xl6">
+                <!--PRIMER COLUMNA tension-->
+                <div class="card-panel">
+
+                    <!--span-->
+
+                    <table class="striped">
+                        
+                        <tr>
+                            <th>
+                                <span>Cálculo Tensión</span>
+                            </th>
+                        </tr>
+                        
+                    </table>
+
+                   <!--Contenido-->
+
+                    <div class="row">
+
+                        <!--Cuenta para sacar Tension -->
+
+                        <!--Intensidad -->
+                       
+                        <div class="input-field col s12 m6">
+                            <i class="small material-icons prefix">I</i>
+                            <input id="i" type="number" placeholder="Ingrese intensidad" class="validate">
+                            <label for=""></label>
+                        </div>
+    
+                        <!--Resistencia-->
+                    
+                        <div class="input-field col s12 m6">
+                            <i class="small material-icons prefix">R</i>
+                            <input id="r" type="number" placeholder="Ingrese Resistencia" class="validate">
+                            <label for=""></label>
+                           
+                        </div>
+
+                        <!--Resultado Tensión-->
+
+                        <!--boton-->
+                        <div class="input-field col  m6">
+
+                            <button id="btn_tension" class="btn waves-effect red darken-1">Cálcular</button>
+                            
+                        </div>
+                        <!--input-->
+                        <div class="input-field col s12 m6">
+
+                            <i class="small material-icons prefix"><img class="materialboxed" src="https://cdn-cceno.nitrocdn.com/RRxQQRWCVqxhCgymCqkgbzNoOSoTgqqZ/assets/static/optimized/wp-content/uploads/2020/03/a6e2a768e011626ca9d0cbaa684de425.simbolo-electrico-voltios-150x150.jpg" width="40" alt="45"></i>
+                         
+                            <input id="total" placeholder="Resultado" type="number" class="validate">
+
+                        </div>
+                   
+                       
+                        
+                        
+                    </div>
+                    
+                </div>
+
+                <!--Segunda tarjeta intensidad-->
+
+                <div class="card-panel">
+                    
+                    <div class="row">
+                        <table class="striped">
+                        
+                            <tr>
+                                <th>
+                                    <span>Cálculo Intensidad</span>
+                                </th>
+                            </tr>
+                            
+                        </table>
+
+                        <!--ingrese Tension-->
+                        
+                        <div class="input-field col s12 m6">
+                            <i class="small material-icons prefix">T</i>
+                            <input id="T" type="number" placeholder="Ingrese Tensión" class="validate">
+                            <label for=""></label>
+                        </div>
+    
+                        <!--Resistencia-->
+                    
+                        <div class="input-field col s12 m6">
+                            <i class="small material-icons prefix">R</i>
+                            <input id="ree" type="number" placeholder="Ingrese Resistencia" class="validate">
+                            <label for=""></label>
+                           
+                        </div>
+    
+                        <!--Resultado Intensidad-->
+    
+                        <!--boton-->
+                        <div class="input-field col s12 m6">
+    
+                            <button id="btn_intensidad" class="btn waves-effect red darken-1">Cálcular</button>
+                            
+                        </div>
+                        <!--input-->
+                        <div class="input-field col s12 m6">
+    
+                            
+                            <i class="small material-icons prefix"><img class="materialboxed" src="https://cdn-cceno.nitrocdn.com/RRxQQRWCVqxhCgymCqkgbzNoOSoTgqqZ/assets/static/optimized/wp-content/uploads/2020/03/cf80e948371ac9a7cf4c11253f78258f.simbolo-electrico-amperios-150x150.png" width="40" alt="45"></i>
+                         
+                            <input id="intensidad" placeholder="Intensidad" type="number" class="validate"> 
+                        
+                        </div>
+                        
+    
+                    </div>
+
+    
+
+                </div>
+
+            </div>
+
+            <!--tercera tarjeta-->
+            
+            <div class="col s12 m6 l6 xl6">
+                <div class="row">
+                    <div class="card-panel">
+                        <table class="striped">
+                        
+                            <tr>
+                                <th>
+                                    <span>Cálculo Resistencia</span>
+                                </th>
+                            </tr>
+
+                          
+                        </table>
+
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <i class="small material-icons prefix">T</i>
+                                <input id="Tension" type="number" placeholder="Ingrese Tensión" class="validate">
+                                <label for=""></label>
+                            </div>
+        
+                            <!--intensidad-->
+                        
+                            <div class="input-field col s12 m6">
+                                <i class="small material-icons prefix">I</i>
+                                <input id="intent" type="number" placeholder="Ingrese intensidad" class="validate">
+                                <label for=""></label>
+                               
+                            </div>
+        
+                            <!--Resultado resistencia-->
+        
+                            <!--boton-->
+                            <div class="input-field col s12 m6">
+        
+                                <button id="btn_resistencia" class="btn waves-effect red darken-1 ">Cálcular</button>
+                                
+                            </div>
+                            <!--input-->
+                            <div class="input-field col s12 m6">
+        
+                                
+                                <i class="small material-icons prefix"><img class="materialboxed" src="https://www.areatecnologia.com/electricidad/imagenes/simbolo-resistencia-electrica.gif" width="45" alt="50"></i>
+                             
+                                <input id="Resistencia" placeholder="Resistencia" type="number" class="validate"> 
+                            
+                            </div>
+    
+
+                        </div>
+                    </div>
+                    <div class="card-panel">
+                       
+                        <table class="responsive-table highlight">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <span>Información</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Cantidad</th>
+                                    <th>Símbolo</th>
+                                    <th>Unidad de Medida (abrev.)</th>
+                                </tr>
+                            </thead>
+                        
+                            <tbody>
+                                <tr>
+                                    <td>Tensión</td>
+                                    <td>E</td>
+                                    <td>Voltio (V)</td>
+                                </tr>
+                                <tr>
+                                    <td>Corriente</td>
+                                    <td>I</td>
+                                    <td>Amperio (A)</td>
+                                </tr>
+                                <tr>
+                                    <td>Resistencia</td>
+                                    <td>R</td>
+                                    <td>Ohmio(Ω)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                </div>
+                
+               
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

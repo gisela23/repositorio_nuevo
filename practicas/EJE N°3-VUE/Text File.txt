@@ -1,0 +1,7 @@
+Deberán generar un formulario como muestra la imagen. Y al completar el mismo deberán almacenar los datos en un ARREGLO tal como se trabajo el día LUNES. La URL deberá ser un enlace de una IMAGEN de INTERNET. Una vez logrado el hecho de almacenar los datos ingresados, deberán recorrer el arreglo, pero en lugar de generar una TABLA, deberán construir un catálogo, como se muestra en la imagen. 
+
+Para ello deberán trabajar con FILAS, COLUMNAS y TARJETAS. Como sabemos, deberemos utilizar la tarjeta de Bootstrap que muestra una Imagen, un titulo y un Subtitulo (pero quitaremos este ultimo). Ya que, la imagen solo muestra una tarjeta con imagen y titulo.
+
+Para agrear la URL de la IMAGEN dinamicamente dentro de la tarjeta les dejo un concepto: 
+
+En la imagen se indica como INCRUSTAR una variable dentro de la propiedad. Para ello siempre hay que anteponer los : (dos puntos) delante de la propiedad SRC para después agregar una variable.
